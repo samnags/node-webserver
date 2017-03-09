@@ -86,6 +86,13 @@ app.get('/bad', (req, res) => {
   })
 })
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'My Projects',
+    pageContent: 'Feast on the impressiveness'
+  })
+})
+
 // binds application to port on machine
  // optional second argument of what to do when server is up
 // app.listen(3000, () => {
